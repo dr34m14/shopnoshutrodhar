@@ -7,8 +7,8 @@ const file = __dirname + "/public/"
 
 //static folder
 app.use('/project/counter', express.static(path.join(file,'counter')))
-app.use('/project/love', express.static(path.join(__dirname, 'public','love')))
 
+app.use('/project/test', express.static(path.join(__dirname, 'public','test')))
 
 
 app.get('/', (req, res) => {
@@ -20,6 +20,7 @@ app.get('/project', (req, res) => {
 })
 app.get('/project/love', (req, res) => {
     res.status(200).sendFile(path.join(file, 'love', 'index.html'))
+    console.log("love folder")
 
 })
 
