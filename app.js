@@ -6,9 +6,9 @@ const file = __dirname + "/public/"
 
 
 //static folder
-app.use('/project/counter', express.static(path.join(file,'counter')))
+app.use('/project/test', express.static(path.join(file,'test')))
 
-app.use('/project/test', express.static(path.join(__dirname, 'public','test')))
+app.use('/project/test2', express.static(path.join(__dirname, 'public','test2')))
 
 
 app.get('/', (req, res) => {
@@ -18,11 +18,7 @@ app.get('/project', (req, res) => {
     res.status(200).sendFile(path.join(file, 'home', 'project.html'))
 
 })
-app.get('/project/love', (req, res) => {
-    res.status(200).sendFile(path.join(file, 'love', 'index.html'))
-    console.log("love folder")
 
-})
 
 
 app.listen(port, () => {
