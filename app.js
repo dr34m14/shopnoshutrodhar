@@ -6,7 +6,9 @@ const file = __dirname + "/public/"
 
 
 //static folder
-app.use('/project/counter', express.static(`${__dirname}/public/counter`))
+app.use('/project/counter', express.static(path.join(file,'counter')))
+app.use('/project/love', express.static(path.join(__dirname, 'public','love')))
+
 
 
 app.get('/', (req, res) => {
