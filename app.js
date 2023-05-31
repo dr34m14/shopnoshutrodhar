@@ -18,7 +18,10 @@ app.get('/project', (req, res) => {
     res.status(200).sendFile(path.join(file, 'home', 'project.html'))
 
 })
+app.get('/project/love', (req, res) => {
+    res.status(200).sendFile(path.join(file, 'love', 'index.html'))
 
+})
 
 
 app.listen(port, () => {
