@@ -7,15 +7,4 @@ body{
     min-height: 100vh;
     background: rgb(255, 255, 255);
     overflow: hidden;
-<<<<<<< HEAD
-=======
-}
-#body_text{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: gray
->>>>>>> sub_main
 }
