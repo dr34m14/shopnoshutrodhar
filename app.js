@@ -7,9 +7,7 @@ const route=require('./route/route')
 
 
 //static folder
-app.use('/project/counter', express.static(path.join(file,'counter')))
-app.use('/project/love', express.static(path.join(__dirname, 'public','love')))
-
+route(app)
 
 
 app.get('/', (req, res) => {
