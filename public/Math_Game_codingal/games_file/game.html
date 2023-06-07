@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="../style/home.css">
+    <link rel="stylesheet" href="../style/game_window.css">
+    <style>
+        .btn {
+            height: 50px;
+            width: 55px;
+            font-size: larger;
+            margin: 10px;
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="window"><canvas id="canvas1"></canvas>
+        <div class="go_home">
+            <a href="../index.html">
+                <button class="btn">Home</button>
+            </a>
+        </div>
+
+        <div class="score_div">
+            Right Ans:<span id="right_ans">00</span>
+        </div>
+        <div class="main_thems">
+
+
+            <div class="ques_platefrom">
+                <div class="ques_box">
+                    <span class="ques" id="ques_id"></span>
+                </div>
+            </div>
+
+
+
+            <div class="ans_platefrom">
+                <div class="two_add">
+                    <div class="ans_box"><span class="ans" id="box1"></span></div>
+                    <div class="ans_box"><span class="ans" id="box2"></span></div>
+                </div>
+                <div class="two_add">
+
+                    <div class="ans_box"><span class="ans" id="box3"></span></div>
+                    <div class="ans_box"><span class="ans" id="box4"></span></div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+    </div>
+    <script src="../app/make_ques/make_ques_2_2dig.js"></script>
+    <script src="../app/ans_click/ans_click.js"></script>
+    <script src="../app/math_matrix/math_matrix.js"></script>
+    <script src="../app/score/score.js"></script>
+
+
+</body>
+
+</html>
