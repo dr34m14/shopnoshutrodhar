@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Options</title>
+    <link rel="stylesheet" href="../style/home.css">
+    <link rel="stylesheet" href="../style/game_window.css">
+    <link rel="stylesheet" href="../style/options.css">
+
+    <style>
+        .btn {
+            height: 50px;
+            width: 55px;
+            font-size: larger;
+            margin: 10px;
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+        .submit{
+            height: 50px;
+            width: 60px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="window"><canvas id="canvas1"></canvas>
+        <div class="go_home">
+            <a href="../index.html">
+                <button class="btn">Home</button>
+            </a>
+        </div>
+        <div class="beffor_canvas">
+            <div class="lay">
+
+                <h2 class="fromname">Select LEVEL:</h2>
+                <div class="radio_allbtn">
+
+                    <div class="low">
+                        <input type="radio" name="lvl" class="radio_btn">
+                        <label for="-1">LOW</label>
+                    </div>
+                    <div class="midel">
+                        <input type="radio" name="lvl" class="radio_btn">
+                        <label for="0">MIDLE</label>
+                    </div>
+                    <div class="low">
+                        <input type="radio" name="lvl" class="radio_btn">
+                        <label for="1">HIGH</label>
+                    </div>
+
+                </div><br><br>
+                <div class="submit_div">
+                    <button class="submit" >Submit</button>
+                </div>
+
+                <br><br><br>
+                <h4 class="Last_info">Go back home to play...</h4>
+            </div>
+        </div>
+    </div>
+    <script src="../app/math_matrix/math_matrix.js"></script>
+</body>
+
+</html>
